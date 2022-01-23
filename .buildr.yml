@@ -1,0 +1,20 @@
+---
+db/Dockerfile:
+  target: build-db
+  rebase:
+    - postgres
+
+web/Dockerfile:
+  target: build-web
+  rebase:
+    - nginx
+
+api/Dockerfile:
+  target: build-api
+  rebase:
+    - ubuntu:20.04
+
+job/Dockerfile:
+  target: build-job
+  rebase:
+    - alpine:3
