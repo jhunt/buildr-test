@@ -1,2 +1,3 @@
-FROM alpine:3.15.0
+FROM alpine:3.7
+# this breaks after 3.8 or so...
 RUN apk add python
