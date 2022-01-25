@@ -12,7 +12,7 @@ web/Dockerfile:
 api/Dockerfile:
   target: build-api
   rebase:
-    - ubuntu:20
+    - ubuntu:20.04
 
 job/Dockerfile:
   target: build-job
